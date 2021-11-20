@@ -451,12 +451,12 @@ footer p {
 
 .podcast1 h1{
     font-size: 80px;
-    color: white;
+    color: var(--color);
 }
 
 .podcast2 h1{
     font-size: 80px;
-    color: white;
+    color: var(--color);
 }
 
 .podcast1{

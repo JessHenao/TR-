@@ -130,6 +130,7 @@ main {
     text-align: justify;
     display: grid;
     margin: auto;
+    margin-bottom: 3%;
     gap: 5%;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(9, 1fr);
@@ -158,7 +159,7 @@ main {
     grid-area: blog1;
 }
 
-.blog h3 {
+.blog h3, .card-title{
     margin-bottom: 2%;
     text-align: center;
     font-weight: 600;
@@ -191,12 +192,83 @@ main {
     border-radius: 10px;
     background: var(--color6);
     border: none;
+    transition: all 0.5s;
 }
 
 .blog button a{
     color: var(--color);
     text-decoration: none;
+    transition: all 0.5s;
 }
+
+.blog button:hover{
+    text-shadow: 2px 2px 5px rgb(7, 7, 7);
+    text-decoration: none;
+    background: white;
+    border: 1px solid var(--color6);
+}
+
+.blog button a:hover{
+    color: var(--color6);
+    font-weight: 600;
+    text-shadow: 2px 2px 5px gray;
+    text-decoration: none;
+    background: white;
+}
+
+.tips h1{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: auto;
+    margin-bottom: 5px;
+    border-bottom: 1px double var(--color1);
+    color: var(--color6);
+    font-weight: 900;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.301);
+}
+
+.card{
+    width: 80%;
+    margin: auto;
+    margin-top: 8%;
+}
+.tip .col .card img {
+    width: 100%;
+    height: 270px;
+    margin: auto;
+}
+
+.tip{
+    width: 100%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+.tutorial{
+        width: 90%;
+        text-align: justify;
+        margin: auto;
+    }
+
+    .tutorial h3{
+        color: var(--color6);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.301);
+        font-weight: 900;
+        text-align: center;
+    }
+    .tutorial img{
+        width: 35%;
+        height: 300px;
+        margin: 2% 32%;
+        border-radius: 2%;
+    }
+    
+    .tutorial2 iframe{
+        margin-top: 3%;
+        margin-left: 6%;
+        width: 41%;
+        height: 380px;
+    }
 
 .galeria1 {
     width: 100vw;
@@ -426,6 +498,33 @@ footer p {
         background: rgba(218, 214, 214, 0.726);
     }
 
+    .radio_alt{
+    gap: 2%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(21, 1fr);
+    grid-template-areas: "titulo"
+                         "blog1"
+                         "blog1"
+                         "blog1"
+                         "blog1"
+                         "blog1"
+                         "blog1"
+                         "blog2 "
+                         "blog2"
+                         "blog2"
+                         "blog2 "
+                         "blog2"
+                         "blog2"
+                         "blog2"
+                         "blog3"
+                         "blog3"
+                         "blog3"
+                         "blog3"
+                         "blog3"
+                         "blog3";
+                        }
+
+
     footer ul {
         font-size: 13px;
 
@@ -466,6 +565,32 @@ footer p {
     .dropdown-toggle {
         background: rgba(218, 214, 214, 0.726);
     }
+
+    .radio_alt{
+        gap: 2%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(20, 1fr);
+        grid-template-areas: "titulo"
+                             "blog1"
+                             "blog1"
+                             "blog1"
+                             "blog1"
+                             "blog1"
+                             "blog1"
+                             "blog2 "
+                             "blog2"
+                             "blog2"
+                             "blog2 "
+                             "blog2"
+                             "blog2"
+                             "blog3"
+                             "blog3"
+                             "blog3"
+                             "blog3"
+                             "blog3"
+                             "blog3";
+                            }
+    
 
     footer ul {
         font-size: 13px;
@@ -508,6 +633,28 @@ footer p {
 
     .dropdown-toggle {
         background: rgba(218, 214, 214, 0.726);
+    }
+
+    .radio_alt{
+        gap: 4%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        grid-template-areas: "titulo titulo"
+                             "blog1 blog2"
+                             "blog1 blog2"
+                             "blog1 blog2"
+                             "blog1 blog2"
+                             "blog1 blog2"
+                             "blog3 blog3"
+                             "blog3 blog3"
+                             "blog3 blog3" 
+                             "blog3 blog3"
+                            }
+
+    .blog3 img {
+        width: 50%;
+        height: 250px;
+        margin: 2% 25% 2% 25%;
     }
 
     footer ul {
