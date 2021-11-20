@@ -67,7 +67,7 @@
     font-family: 'Julius Sans One', sans-serif;
 }
 
-nav  {
+nav {
     background-color: var(--color);
     height: 21%;
     border-bottom-left-radius: 10px;
@@ -102,11 +102,11 @@ nav  {
 
 .dropdown-toggle:hover {
     background: var(--color4);
-    color: var(--color) !important; 
+    color: var(--color) !important;
     border-radius: 10px;
 }
 
-.dropdown-item{
+.dropdown-item {
     width: 100%;
     color: var(--color4) !important;
     transition: all 1s;
@@ -114,8 +114,8 @@ nav  {
     font-family: 'Julius Sans One', sans-serif;
 }
 
-.dropdown-item:hover{
-    background: var(--color4) !important; 
+.dropdown-item:hover {
+    background: var(--color4) !important;
     color: var(--color) !important;
     border-radius: 100px;
 }
@@ -285,7 +285,7 @@ footer p {
     footer ul {
         font-size: 13px;
 
-  }
+    }
 
     .imagenes2 {
         height: 150px;
@@ -332,11 +332,11 @@ footer p {
     footer ul {
         font-size: 13px;
 
-  }
+    }
 
-  .imagenes2 {
-    height: 150px;
-}
+    .imagenes2 {
+        height: 150px;
+    }
 }
 
 @media screen and (max-width:650px) and (min-width:451px) {
@@ -373,11 +373,11 @@ footer p {
     footer ul {
         font-size: 13px;
 
-  }
+    }
 
-  .imagenes2 {
-    height: 150px;
-}
+    .imagenes2 {
+        height: 150px;
+    }
 }
 
 @media screen and (max-width:1000px) and (min-width:651px) {
@@ -414,7 +414,7 @@ footer p {
     }
 
     footer ul {
-          font-size: 13px;
+        font-size: 13px;
 
     }
 }
@@ -431,20 +431,73 @@ footer p {
     }
 
     .informacion {
-    width: 85%;
-    margin-top: 2%;
+        width: 85%;
+        margin-top: 2%;
+    }
+
+    .informacion h1 {
+        font-size: 50px;
+    }
+
+    .informacion h5 {
+        font-size: 15px;
+    }
+
+    .navbar {
+        height: 55px;
+    }
+
 }
 
-.informacion h1 {
-    font-size: 50px;
+.podcast1 h1{
+    font-size: 80px;
+    color: white;
 }
 
-.informacion h5 {
-    font-size: 15px;
+.podcast2 h1{
+    font-size: 80px;
+    color: white;
 }
 
-.navbar {
-    height: 55px;
+.podcast1{
+    background-color: var(--color1);
+    text-align: right;
+    justify-content: right;
+    align-content: right ;
 }
 
+.podcast2{
+    background-color: var(--color5);
+    text-align: right;
+    justify-content: right;
+    align-content: right ;
+    margin-top: 5%;
 }
+
+.podcast {
+    width: 25%;
+    display: block;
+    align-content: left;
+    margin-bottom: 5%;
+}
+
+@media screen and (max-width:1000px) and (min-width:651px) {
+    .podcast {
+        width: 80%;
+    }
+
+    .podcast1 h1{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:650px) and (min-width:320px) {
+    .podcast {
+        width: 80%;
+    }
+
+    .podcast1 h1{
+        font-size: 40px;
+    }
+}
+
