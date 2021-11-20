@@ -125,6 +125,75 @@ main {
     margin: 5%;
 }
 
+.radio_alt{
+    width: 90%;
+    text-align: justify;
+    display: grid;
+    margin: auto;
+    gap: 5%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas: "titulo titulo titulo"
+                         "blog1 blog2 blog3"
+                         "blog1 blog2 blog3"
+                         "blog1 blog2 blog3"
+                         "blog1 blog2 blog3"
+                         "blog1 blog2 blog3"
+                         "blog1 blog2 blog3"
+                         "blog1 blog2 blog3"
+                         "blog1 blog2 blog3";
+}
+
+.radio_alt h1{
+    grid-area: titulo;
+    margin-top: auto;
+    margin-bottom: 5px;
+    border-bottom: 1px double var(--color1);
+    color: var(--color6);
+    font-weight: 900;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.301);
+}
+
+.radio_alt .blog1 {
+    grid-area: blog1;
+}
+
+.blog h3 {
+    margin-bottom: 2%;
+    text-align: center;
+    font-weight: 600;
+    color: var(--color6);
+}
+
+.blog1 img{
+    width: 80%;
+    height: 300px;
+    margin: 10%;
+}
+
+.radio_alt .blog2 {
+    grid-area: blog2;
+}
+
+.radio_alt .blog3 {
+    grid-area: blog3;
+}
+
+.blog3 img{
+    width: 70%;
+    height: 220px;
+    margin: 10%;
+}
+
+.blog button{
+    width: 100px;
+    height: 40px;
+    color: var(--color);
+    text-decoration: none;
+    border-radius: 10px;
+    background: var(--color6);
+}
+
 .galeria1 {
     width: 100vw;
     height: 300px;
@@ -281,6 +350,30 @@ footer p {
     .dropdown-toggle {
         background: rgba(218, 214, 214, 0.726);
     }
+
+    .radio_alt{
+        gap: 2%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(18, 1fr);
+        grid-template-areas: "titulo"
+                             "blog1"
+                             "blog1"
+                             "blog1"
+                             "blog1"
+                             "blog1"
+                             "blog2 "
+                             "blog2"
+                             "blog2"
+                             "blog2 "
+                             "blog2"
+                             "blog2"
+                             "blog3"
+                             "blog3"
+                             "blog3"
+                             "blog3"
+                             "blog3"
+                             "blog3";
+}
 
     footer ul {
         font-size: 13px;
