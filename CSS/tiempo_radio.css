@@ -188,10 +188,14 @@ main {
 .blog button{
     width: 100px;
     height: 40px;
-    color: var(--color);
-    text-decoration: none;
     border-radius: 10px;
     background: var(--color6);
+    border: none;
+}
+
+.blog button a{
+    color: var(--color);
+    text-decoration: none;
 }
 
 .galeria1 {
