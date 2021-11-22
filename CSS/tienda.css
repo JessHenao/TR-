@@ -454,7 +454,7 @@ footer p {
 }
 
 .grid{
-    width: 90%;
+    width: 100%;
     margin: 30px auto;
     display: grid;
     gap: 10px;
@@ -464,26 +464,75 @@ footer p {
                          "card4  card5   card6";
 }
 
-.grid .card1{
+.grid h5{
+    font-weight: 800 !important;
+}
+
+.grid .tarjeta1{
     grid-area: card1;
+    margin: auto;
 }
 
-.grid .card2{
+.grid .tarjeta2{
     grid-area: card2;
+    margin: auto;
 }
 
-.grid .card3{
+.grid .tarjeta3{
     grid-area: card3;
+    margin: auto;
 }
 
-.grid .card4{
+.grid .tarjeta4{
     grid-area: card4;
+    margin: auto;
 }
 
-.grid .card5{
+.grid .tarjeta5{
     grid-area: card5;
+    margin: auto;
 }
 
-.grid .card6{
+.grid .tarjeta6{
     grid-area: card6;
+    margin: auto;
+}
+
+@media screen and (max-width:930px) and (min-width:621px) {
+    .grid{
+        width: 100%;
+        margin: 30px auto;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: "card1  card2"
+                             "card3  card4"
+                             "card5  card6";
+    }
+    .tarjeta1, .tarjeta2, .tarjeta3, .tarjeta4, .tarjeta5, .tarjeta6{
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .grid{
+        width: 100%;
+        margin: 30px auto;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas: "card1"
+                             "card2"
+                             "card3"
+                             "card4" 
+                             "card5" 
+                             "card6";
+    }
+
+    .tarjeta1, .tarjeta2, .tarjeta3, .tarjeta4, .tarjeta5, .tarjeta6{
+        align-items: center;
+        margin: auto;
+    }
 }
