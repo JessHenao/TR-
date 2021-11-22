@@ -448,3 +448,42 @@ footer p {
 }
 
 }
+
+.btn-primary {
+    background-color: var(--color1) !important;
+}
+
+.grid{
+    width: 90%;
+    margin: 30px auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "card1  card2   card3"
+                         "card4  card5   card6";
+}
+
+.grid .card1{
+    grid-area: card1;
+}
+
+.grid .card2{
+    grid-area: card2;
+}
+
+.grid .card3{
+    grid-area: card3;
+}
+
+.grid .card4{
+    grid-area: card4;
+}
+
+.grid .card5{
+    grid-area: card5;
+}
+
+.grid .card6{
+    grid-area: card6;
+}
