@@ -120,21 +120,15 @@ nav {
     border-radius: 100px;
 }
 
+/* Contenido */
 
 main {
     margin: 5%;
 }
 
-.galeria1 {
-    width: 100vw;
-    height: 300px;
-    overflow: hidden;
-    display: flex;
-    position: relative;
-    flex-wrap: wrap;
-}
+/* Galería pie de página */
 
-.sesgoarriba2 {
+.sesgoarriba {
     position: absolute;
     top: 0;
     right: 0;
@@ -144,18 +138,7 @@ main {
     z-index: 10;
 }
 
-.imagenes3 {
-    width: 25%;
-    height: 300px;
-}
-
-.imagenes3 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.galeria2 {
+.galeria1 {
     width: 100%;
     height: 100px;
     display: flex;
@@ -164,27 +147,25 @@ main {
     opacity: 0.7;
 }
 
-.imagenes2 {
+.imagenes1 {
     width: 25%;
     height: 100px;
 }
 
-.imagenes2 img {
+.imagenes1 img {
     width: 100%;
     height: 305%;
     object-fit: cover;
 }
 
-.redes a img {
-    border-radius: 50%;
-    width: 30PX;
-    height: 30px;
-}
+/* Pie de pagina */
 
 footer {
     bottom: 0;
     width: 100vw;
 }
+
+/* Menú inferior */
 
 footer ul {
     padding: 0;
@@ -193,7 +174,6 @@ footer ul {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 0;
-    font-family: 'Julius Sans One', sans-serif;
 }
 
 footer ul li {
@@ -203,16 +183,22 @@ footer ul li {
 
 footer ul li a {
     color: var(--color);
-    font-weight: 800;
+    font-weight: 900;
     text-decoration: none;
-    text-shadow: 2px 2px 1px bl;
-    font-family: 'Julius Sans One', sans-serif;
+    text-shadow: 2px 2px 2px black;
 }
 
 footer ul li a:hover {
     color: var(--color);
     text-decoration: underline;
-    font-weight: 800;
+}
+
+/* Redes sociales */
+
+.redes a img {
+    border-radius: 50%;
+    width: 30PX;
+    height: 30px;
 }
 
 footer div {
@@ -235,8 +221,10 @@ footer div a {
 }
 
 footer div a:hover {
-    border: solid 2px var(--color4);
+    border: solid 2px var(--color3);
 }
+
+/* Derechos de autor */
 
 footer p {
     margin-top: 15px;
@@ -246,6 +234,44 @@ footer p {
     color: var(--color);
     margin-bottom: 0;
 }
+
+/* Redes sociales */
+
+footer div {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+footer div a {
+    font-size: 24px;
+    width: 40px;
+    height: 35px;
+    line-height: 26px;
+    display: inline-block;
+    text-align: center;
+    background-color: var(--color);
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 0 8px;
+    box-shadow: -1px -1px 3px 0 rgba(218, 214, 214, 0.726);
+}
+
+footer div a:hover {
+    border: solid 2px var(--color3);
+}
+
+/* Derechos de autor */
+
+footer p {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--color);
+    margin-bottom: 0;
+}
+
+/* Responsive */
 
 @media screen and (max-width:280px) {
 

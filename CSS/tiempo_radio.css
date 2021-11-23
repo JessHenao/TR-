@@ -120,11 +120,13 @@ nav  {
     border-radius: 100px;
 }
 
+/* Contenido */
 
 main {
     margin: 5%;
 }
 
+/* Radio alternativa y comunitaria */
 .radio_alt{
     width: 90%;
     text-align: justify;
@@ -216,6 +218,8 @@ main {
     background: white;
 }
 
+/* Tips */
+
 .tips h1{
     width: 90%;
     margin-left: 5%;
@@ -244,6 +248,8 @@ main {
     margin-bottom: 5%;
 }
 
+/* Tutoriales */
+
 .tutorial{
         width: 90%;
         text-align: justify;
@@ -270,16 +276,9 @@ main {
         height: 380px;
     }
 
-.galeria1 {
-    width: 100vw;
-    height: 300px;
-    overflow: hidden;
-    display: flex;
-    position: relative;
-    flex-wrap: wrap;
-}
+/* Galería pie de página */
 
-.sesgoarriba2 {
+.sesgoarriba {
     position: absolute;
     top: 0;
     right: 0;
@@ -289,18 +288,7 @@ main {
     z-index: 10;
 }
 
-.imagenes3 {
-    width: 25%;
-    height: 300px;
-}
-
-.imagenes3 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.galeria2 {
+.galeria1 {
     width: 100%;
     height: 100px;
     display: flex;
@@ -309,27 +297,25 @@ main {
     opacity: 0.7;
 }
 
-.imagenes2 {
+.imagenes1 {
     width: 25%;
     height: 100px;
 }
 
-.imagenes2 img {
+.imagenes1 img {
     width: 100%;
     height: 305%;
     object-fit: cover;
 }
 
-.redes a img {
-    border-radius: 50%;
-    width: 30PX;
-    height: 30px;
-}
+/* Pie de pagina */
 
 footer {
     bottom: 0;
     width: 100vw;
 }
+
+/* Menú inferior */
 
 footer ul {
     padding: 0;
@@ -338,7 +324,6 @@ footer ul {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 0;
-    font-family: 'Julius Sans One', sans-serif;
 }
 
 footer ul li {
@@ -348,16 +333,22 @@ footer ul li {
 
 footer ul li a {
     color: var(--color);
-    font-weight: 800;
+    font-weight: 900;
     text-decoration: none;
-    text-shadow: 2px 2px 1px bl;
-    font-family: 'Julius Sans One', sans-serif;
+    text-shadow: 2px 2px 2px black;
 }
 
 footer ul li a:hover {
     color: var(--color);
     text-decoration: underline;
-    font-weight: 800;
+}
+
+/* Redes sociales */
+
+.redes a img {
+    border-radius: 50%;
+    width: 30PX;
+    height: 30px;
 }
 
 footer div {
@@ -380,8 +371,10 @@ footer div a {
 }
 
 footer div a:hover {
-    border: solid 2px var(--color6);
+    border: solid 2px var(--color3);
 }
+
+/* Derechos de autor */
 
 footer p {
     margin-top: 15px;
@@ -391,6 +384,8 @@ footer p {
     color: var(--color);
     margin-bottom: 0;
 }
+
+/* Responsive */
 
 @media screen and (max-width:280px) {
 
