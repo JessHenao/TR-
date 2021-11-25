@@ -20,7 +20,6 @@
     background-color: var(--color1);
     width: 100%;
     height: 300px;
-    border-bottom-left-radius: 10px;
     border: 1px var(--color1) solid;
 }
 
@@ -39,7 +38,6 @@
     top: 0px;
     right: 0;
     border-width: 20vh 0 0 100vw;
-    z-index: 20;
 }
 
 /* Identificador de página */
@@ -53,10 +51,10 @@
 .informacion {
     width: 100%;
     height: 80%;
-    border-bottom: 1px var(--color) solid;
     padding: 3%;
     font-family: 'Julius Sans One', sans-serif;
     text-align: center;
+    border-bottom-left-radius: none;
 }
 
 .informacion h1 {
@@ -81,7 +79,6 @@ nav {
     border-bottom-left-radius: 10px;
     border: 1px solid var(--color1);
     border-right: none;
-    z-index: 20;
 }
 
 .navbar-toggler {
@@ -89,7 +86,7 @@ nav {
 }
 
 .navbar-toggler:hover {
-    background-color: var(--color6);
+    background-color: var(--color3);
 }
 
 .nav-item {
@@ -97,10 +94,15 @@ nav {
 }
 
 .nav-item1 {
-    margin-left: 8%;
+    margin-left: 12%;
 }
 
-.dropdown-toggle {
+.nv {
+    width: 250px;
+}
+
+.dropdown-toggle,
+.active {
     width: 100%;
     color: var(--color3) !important;
     transition: all 1s;
@@ -108,7 +110,8 @@ nav {
     font-family: 'Julius Sans One', sans-serif;
 }
 
-.dropdown-toggle:hover {
+.dropdown-toggle:hover,
+.active:hover {
     background: var(--color3);
     color: var(--color) !important;
     border-radius: 10px;
@@ -117,7 +120,7 @@ nav {
 .dropdown-item {
     width: 100%;
     color: var(--color3) !important;
-    transition: all 1s;
+    transition: all 0.5s;
     background: transparent;
     font-family: 'Julius Sans One', sans-serif;
 }
@@ -127,6 +130,8 @@ nav {
     color: var(--color) !important;
     border-radius: 100px;
 }
+
+/* Contenido */
 
 /* Buscador */
 
@@ -157,13 +162,6 @@ nav {
     letter-spacing: 2px;
 }
 
-.search__input:hover,
-.search__input:focus {
-    padding: 12px 15px;
-    outline: 0;
-    border: 1px solid transparent;
-    border-bottom: 1px solid var(--color1);
-}
 
 /*Galería 1*/
 
@@ -193,7 +191,6 @@ main {
     margin: 17% 5% 3% 5%;
 }
 
-/* Bienvenida */
 
 .bienv_tit{
     width: 87%;
@@ -422,8 +419,18 @@ footer p {
         height: 60px;
     }
 
-    .dropdown-toggle {
-        background: rgba(218, 214, 214, 0.726);
+    nav-item {
+        width: 90%;
+        margin: 0%;
+    }
+
+    .nav-item a {
+        text-align: center;
+    }
+
+    .dropdown-toggle,
+    .active {
+        background: white;
     }
 
     footer ul {
@@ -469,8 +476,18 @@ footer p {
         height: 60px;
     }
 
-    .dropdown-toggle {
-        background: rgba(218, 214, 214, 0.726);
+    .navbar {
+        height: 60px;
+    }
+
+
+    .nav-item {
+        width: 80%;
+        margin: 0%;
+    }
+
+    .nav-item a {
+        text-align: center;
     }
 
     footer ul {
@@ -510,8 +527,19 @@ footer p {
         height: 55px;
     }
 
-    .dropdown-toggle {
-        background: rgba(218, 214, 214, 0.726);
+    .nav-item {
+        width: 65%;
+        margin: 0%;
+    }
+
+    .nav-item a {
+        text-align: center;
+    }
+
+    .dropdown-toggle,
+    .active {
+        background: white;
+
     }
 
     footer ul {
@@ -524,7 +552,7 @@ footer p {
     }
 }
 
-@media screen and (max-width:1000px) and (min-width:651px) {
+@media screen and (max-width:988px) and (min-width:651px) {
 
     .encabezado {
         height: 220px;
@@ -563,24 +591,25 @@ footer p {
     }
 }
 
-@media screen and (min-width:1001px) {
+@media screen and (max-width:1120px) and (min-width:989px) {
 
     .encabezado {
-        height: 300px;
+        height: 220px;
     }
 
     .logo {
-        width: 20%;
-        height: 35%;
+        width: 18%;
+        height: 28%;
     }
 
     .informacion {
-        width: 85%;
-        margin-top: 2%;
+        width: 70%;
+        margin-top: 3%;
     }
 
     .informacion h1 {
-        font-size: 50px;
+        font-size: 33px;
+        margin-top: 4%;
     }
 
     .informacion h5 {
@@ -591,4 +620,135 @@ footer p {
         height: 55px;
     }
 
+    .nav-item {
+        margin: 0%;
+    }
+
+    .nav-item1 {
+        margin-left: 0%;
+    }
+
+    .nv {
+        width: 150px;
+    }
+
+    footer ul {
+        font-size: 13px;
+
+    }
 }
+
+@media screen and (min-width:1121px) {
+
+    .encabezado {
+        height: 220px;
+    }
+
+    .logo {
+        width: 18%;
+        height: 28%;
+    }
+
+    .informacion {
+        width: 80%;
+        margin-top: 1%;
+    }
+
+    .informacion h5 {
+        font-size: 15px;
+    }
+
+    .navbar {
+        height: 55px;
+    }
+
+
+    .nav-item {
+        margin: 1%;
+    }
+
+    .nav-item1 {
+        margin-left: 0%;
+    }
+}
+
+    @media screen and (max-width:1120px) and (min-width:989px) {
+
+        .encabezado {
+            height: 220px;
+        }
+    
+        .logo {
+            width: 18%;
+            height: 28%;
+        }
+    
+        .informacion {
+            width: 70%;
+            margin-top: 3%;
+        }
+    
+        .informacion h1 {
+            font-size: 33px;
+            margin-top: 4%;
+        }
+    
+        .informacion h5 {
+            font-size: 15px;
+        }
+    
+        .navbar {
+            height: 55px;
+        }
+    
+        .nav-item {
+            margin: 0%;
+        }
+    
+        .nav-item1 {
+            margin-left: 0%;
+        }
+    
+        .nv {
+            width: 150px;
+        }
+    
+        footer ul {
+            font-size: 13px;
+    
+        }
+    }
+    
+    @media screen and (min-width:1121px) {
+    
+        .encabezado {
+            height: 220px;
+        }
+    
+        .logo {
+            width: 18%;
+            height: 28%;
+        }
+    
+        .informacion {
+            width: 80%;
+            margin-top: 1%;
+        }
+    
+        .informacion h5 {
+            font-size: 15px;
+        }
+    
+        .navbar {
+            height: 55px;
+        }
+    
+    
+        .nav-item {
+            margin: 1%;
+        }
+    
+        .nav-item1 {
+            margin-left: 0%;
+        }
+    }
