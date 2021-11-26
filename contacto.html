@@ -11,13 +11,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="CSS/index.css">
+  <link rel="stylesheet" href="CSS/contacto.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <title>Inicio</title>
+  <title>Contacto</title>
 </head>
 
 <body>
+
   <!-- Encabezado -->
 
   <section>
@@ -28,8 +29,8 @@
         <!-- Identificador de página -->
 
         <div class="informacion">
-          <h1>Sara Gaviria Piedrahíta</h1>
-          <h5>Creadora de contenidos radiales</h5>
+          <h1>Contáctame</h1>
+          <h5>Sara Gaviria Piedrahíta</h5>
         </div>
 
         <!-- Menú -->
@@ -62,7 +63,12 @@
 
                 <li class="nav-item dropdown">
                   <a class="nav-link active dropdown-toggle" href="ases_tall.html" id="navbarDropdownMenuLink"
-                    role="button">Talleres y Asesorías </a>
+                    role="button" data-bs-toggle="dropdown" aria-expanded="false">Talleres y Asesorías </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="ases_tall.html">Talleres</a></li>
+                    <li><a class="dropdown-item" href="#">Asesorías</a></li>
+                    <li><a class="dropdown-item" href="ases_tall.html">Preguntas frecuentes</a></li>
+                  </ul>
                 </li>
 
                 <li class="nav-item dropdown">
@@ -98,102 +104,26 @@
     <input class="search__input" type="text" placeholder="Buscar">
   </div>
 
-  <!--Galería 1-->
 
-  <div class="galeria">
-    <div class="imagenes">
-      <img src="images/p10.JPG" alt="">
-    </div>
 
-    <div class="imagenes">
-      <img src="images/p3.JPG" alt=" ">
-    </div>
+  <div class="form">
+    <form>
+      <h2>¡No dudes en escribirme!</h2>
 
-    <div class="imagenes">
-      <img src="images/p2.jpg" alt=" ">
-    </div>
 
-    <div class="imagenes">
-      <img src="images/radio.JPG" alt=" ">
-    </div>
+      <label for="name">Nombre:<input type="text" placeholder="Escribe tu nombre..."></input></label><br>
+      <label for="email">E-mail:<input type="email" placeholder="¿Cómo podemos contactarte?..."></input></label><br>
+      <label for="message">Mensaje:<input name="comments" cols="40"
+          placeholder="Preguntas, dudas, recomendaciones, comentarios...">
+        </input></label><br>
+      <button>Enviar mensaje</button>
+      <div>
+        <span> +57 311 668 8515 ~ saragapi@gmail.com</span>
+      </div>
+    </form>
   </div>
 
-  <main>
-    <h1 class="bienv_tit">¡Hola!</h1>
-    <p class="bienvenida">
-      Es un gran momento para avanzar en tus proyectos radiales, los contenidos sonoros están en
-      tendencia y hay espacio para tu idea.
-      <br><br>
-      Desde hace <b>más de 10 años</b> trabajo con radio, podcast y comunicación. Mi objetivo es que los contenidos
-      sonoros
-      crezcan en cantidad y calidad, así que me encantaría acompañarte en el proceso. Encuentra aquí información básica
-      que te puede ayudar o <a href="contacto.html" class="inicio_contacto">contáctame</a> si requieres un taller o
-      asesoría.
-    </p>
-
-
-    <div class="inicio_contenido">
-
-      <!-- Destacado -->
-
-      <div class="destacado mt-4 ms-5">
-
-        <small class="text-primary fs-4"><span class="badge bg-primary"> Destacado</span> Taller de Radio
-          Viajera</small>
-        <p class="publicidad_taller">¿Cómo hacer radio cuando se viaja con frecuencia o se tiene poco tiempo?
-          Me enfrento a esta pregunta todo el tiempo y con frecuencia reta mis fuerzas😪.
-          Hacer contenido sonoro mientras se viaja es difícil, agotador y bello. Pero... ¿cómo hacerlo menos agotador y
-          más bello? <br>
-          <b> Este sábado 30 de octubre en Marsella (#Risaralda) acompañaré un TALLER DE RADIO VIAJERA como parte
-            Festival de
-            cuenteria y narración oral del Eje Cafetero Cafetero.</b>🌄⛺🎡🚅
-          En este taller vamos a asumir el reto de aprender a hacer radio mientras se viaja, se cambia o se tiene poco
-          tiempo. Todo con herramientas mínimas y mucha creatividad. 🤯
-          La información de este taller está en la imagen</p>
-
-        <span>No te pierdas el taller <a href="#" class="destacado_info">+ info</a></span>
-
-        <img class="img1" src="images/taller_rv.jpg" alt="">
-        <br>
-        <img class="img2" src="images/taller_rv2.JPG" alt="">
-      </div>
-
-      <!-- Nuevo -->
-
-      <div class="new">
-
-        <small class="text-primary fs-3"><span class="badge bg-primary">¡Nuevo!</span> Ficción musical </small>
-
-        <iframe src="https://open.spotify.com/embed/episode/6IvBLRUb7QduGhXlTei9Sk?utm_source=generator&theme=0"
-          width="45%" height="231" frameBorder="0" allowfullscreen=""
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-
-        <iframe width="45%" height="360" src="https://www.youtube.com/embed/6XHZV1CO8xQ" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-
-        <small class="text-primary fs-3">Baúl de cartas </small>
-
-        <iframe src="https://open.spotify.com/embed/episode/7oXdWSWKeF5Bsz5ioJ9qdP?utm_source=generator&theme=0"
-          width="45%" height="231" frameBorder="0" allowfullscreen=""
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-
-        <iframe width="45%" height="355" src="https://www.youtube.com/embed/PDD8LSoGMgs" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-
-      </div>
-    </div>
-
-    <!-- Formulario -->
-
-    <button class="form"><a href="contacto.html">Contacta a Sara</a></button>
-
   </main>
-
-  <!-- Galería -->
 
   <section class="galeria1">
     <div class="sesgoarriba"></div>
@@ -213,12 +143,7 @@
       <img src="images/p10.jpg" alt=" ">
     </div>
 
-    <!-- Pie de página -->
-
     <footer class="mt-5 pt-4">
-
-      <!-- Redes sociales -->
-
       <div class="redes">
         <a href="https://www.instagram.com/saragapi/?hl=es"><img width="25px" height="22px" src="images/instagram.JPG"
             alt=""> </a>
@@ -230,8 +155,6 @@
             src="images/spotify.JPG"></a>
       </div>
 
-      <!-- Menú inferior -->
-
       <ul class="lista">
         <li class="lista-item"><a href="index.html">Inicio</a></li>
         <li class="lista-item"><a href="about.html">Sobre Sara</a></li>
@@ -240,8 +163,6 @@
         <li class="lista-item"><a href="podcast.html">Podcast & Proyectos Sonoros</a></li>
         <li class="lista-item"><a href="tienda.html">Radio Tienda</a></li>
       </ul>
-
-      <!-- Derechos de autor -->
 
       <p>Sara Gaviria P. </p>
     </footer>
