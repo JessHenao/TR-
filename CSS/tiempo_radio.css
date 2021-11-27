@@ -105,6 +105,7 @@ nav {
 .active {
     width: 100%;
     color: var(--color6) !important;
+    font-weight: 900;
     transition: all 1s;
     background: transparent;
     font-family: 'Julius Sans One', sans-serif;
@@ -730,7 +731,7 @@ footer p {
     }
 }
 
-@media screen and (max-width:988) and (min-width:651px) {
+@media screen and (max-width:988px) and (min-width:651px) {
 
     .encabezado {
         height: 220px;
@@ -759,6 +760,7 @@ footer p {
         height: 55px;
     }
 
+
     .nav-item {
         width: 50%;
         margin: 0%;
@@ -774,20 +776,23 @@ footer p {
     }
 
     .radio_alt {
-        gap: 4%;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(10, 1fr);
-        grid-template-areas: "titulo titulo"
-            "blog1 blog2"
-            "blog1 blog2"
-            "blog1 blog2"
-            "blog1 blog2"
-            "blog1 blog2"
-            "blog3 blog3"
-            "blog3 blog3"
-            "blog3 blog3"
-            "blog3 blog3"
+        gap: 2%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(13, 1fr);
+        grid-template-areas: "titulo"
+            "blog1"
+            "blog1"
+            "blog1"
+            "blog1"
+            "blog2 "
+            "blog2"
+            "blog2"
+            "blog3"
+            "blog3"
+            "blog3"
+            "blog3";
     }
+
 
     .blog3 img {
         width: 50%;
@@ -795,10 +800,6 @@ footer p {
         margin: 2% 25% 2% 25%;
     }
 
-    footer ul {
-        font-size: 13px;
-
-    }
 }
 
 @media screen and (max-width:1120px) and (min-width:989px) {

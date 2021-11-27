@@ -104,6 +104,7 @@ nav {
 .active {
     width: 100%;
     color: var(--color5) !important;
+    font-weight: 900;
     transition: all 1s;
     background: transparent;
     font-family: 'Julius Sans One', sans-serif;
@@ -359,20 +360,6 @@ a {
 .contenedor-redes-sociales .facebook:hover span.circulo,
 .contenedor-redes-sociales .facebook span.titulo {
     color: #3b5998;
-}
-
-.contenedor-redes-sociales .twitter {
-    border: 2px solid #1da1f2;
-}
-
-.contenedor-redes-sociales .twitter:hover,
-.contenedor-redes-sociales .twitter span.circulo {
-    background: #1da1f2;
-}
-
-.contenedor-redes-sociales .twitter:hover span.circulo,
-.contenedor-redes-sociales .twitter span.titulo {
-    color: #1da1f2;
 }
 
 .contenedor-redes-sociales .youtube {
@@ -675,6 +662,11 @@ footer p {
         font-size: 11px;
     }
 
+    .navbar {
+        height: 55px;
+    }
+
+
     .nav-item {
         width: 65%;
         margin: 0%;
@@ -688,10 +680,6 @@ footer p {
     .active {
         background: white;
 
-    }
-
-    .dropdown-toggle {
-        background: rgba(218, 214, 214, 0.726);
     }
 
     footer ul {

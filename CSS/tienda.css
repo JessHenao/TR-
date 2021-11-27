@@ -79,6 +79,7 @@ nav {
     border-bottom-left-radius: 10px;
     border: 1px solid var(--color1);
     border-right: none;
+
 }
 
 .navbar-toggler {
@@ -105,6 +106,7 @@ nav {
 .active {
     width: 100%;
     color: var(--color2) !important;
+    font-weight: 900;
     transition: all 1s;
     background: transparent;
     font-family: 'Julius Sans One', sans-serif;
@@ -196,6 +198,7 @@ main {
 .grid .tarjeta1 {
     grid-area: card1;
     margin: auto;
+    z-index: -20;
 }
 
 .grid .tarjeta2 {
@@ -335,321 +338,13 @@ footer p {
 
 /* Responsive */
 
-@media screen and (max-width:280px) {
 
-    .encabezado {
-        height: 360px;
-    }
-
-    .logo {
-        width: 40%;
-        height: 17%;
-        right: 30%;
-        margin-top: 3%;
-    }
-
-    .informacion {
-        width: 100%;
-        height: 84%;
-    }
-
-    .informacion h1 {
-        font-size: 18px;
-        margin-top: 180px;
-    }
-
-    .informacion h5 {
-        font-size: 10px;
-    }
-
-    .navbar {
-        height: 60px;
-    }
-
-    .nav-item {
-        width: 90%;
-        margin: 0%;
-    }
-
-    .nav-item a {
-        text-align: center;
-    }
-
-    .dropdown-toggle,
-    .active {
-        background: white;
-
-    }
-
-    footer ul {
-        font-size: 13px;
-
-    }
-
-    .imagenes2 {
-        height: 150px;
-    }
-
-}
-
-@media screen and (max-width:450px) and (min-width:281px) {
-
-    .encabezado {
-        height: 400px;
-    }
-
-    .logo {
-        width: 40%;
-        height: 20%;
-        right: 30%;
-        margin-top: 3%;
-    }
-
-    .informacion {
-        width: 100%;
-        height: 84%;
-        margin-top: 2%;
-    }
-
-    .informacion h1 {
-        font-size: 28px;
-        margin-top: 190px;
-    }
-
-    .informacion h5 {
-        font-size: 15px;
-    }
-
-    .navbar {
-        height: 60px;
-    }
-
-
-    .nav-item {
-        width: 80%;
-        margin: 0%;
-    }
-
-    .nav-item a {
-        text-align: center;
-    }
-
-    .dropdown-toggle,
-    .active {
-        background: white;
-
-    }
-
-    footer ul {
-        font-size: 13px;
-
-    }
-
-    .imagenes2 {
-        height: 150px;
-    }
-}
-
-@media screen and (max-width:650px) and (min-width:451px) {
-    .encabezado {
-        height: 200px;
-    }
-
-    .logo {
-        width: 38%;
-        height: 25%;
-    }
-
-    .informacion {
-        width: 60%;
-    }
-
-    .informacion h1 {
-        font-size: 25px;
-        margin-top: 10%;
-    }
-
-    .informacion h5 {
-        font-size: 11px;
-    }
-
-    .navbar {
-        height: 55px;
-    }
-
-
-    .nav-item {
-        width: 65%;
-        margin: 0%;
-    }
-
-    .nav-item a {
-        text-align: center;
-    }
-
-    .dropdown-toggle,
-    .active {
-        background: white;
-
-    }
-
-    footer ul {
-        font-size: 13px;
-
-    }
-
-    .imagenes2 {
-        height: 150px;
-    }
-}
-
-@media screen and (max-width:988px) and (min-width:651px) {
-
-    .encabezado {
-        height: 220px;
-    }
-
-    .logo {
-        width: 30%;
-        height: 28%;
-    }
-
-    .informacion {
-        width: 70%;
-        margin-top: 3%;
-    }
-
-    .informacion h1 {
-        font-size: 33px;
-        margin-top: 4%;
-    }
-
-    .informacion h5 {
-        font-size: 15px;
-    }
-
-    .navbar {
-        height: 55px;
-    }
-
-
-    .nav-item {
-        width: 50%;
-        margin: 0%;
-    }
-
-    .nav-item a {
-        text-align: center;
-    }
-
-    .dropdown-toggle,
-    .active {
-        background: white;
-    }
-
-    footer ul {
-        font-size: 13px;
-
-    }
-}
-
-@media screen and (max-width:1120px) and (min-width:989px) {
-
-    .encabezado {
-        height: 220px;
-    }
-
-    .logo {
-        width: 18%;
-        height: 28%;
-    }
-
-    .informacion {
-        width: 70%;
-        margin-top: 3%;
-    }
-
-    .informacion h1 {
-        font-size: 33px;
-        margin-top: 4%;
-    }
-
-    .informacion h5 {
-        font-size: 15px;
-    }
-
-    .navbar {
-        height: 55px;
-    }
-
-    .nav-item {
-        margin: 0%;
-    }
-
-    .nav-item1 {
-        margin-left: 0%;
-    }
-
-    .nv {
-        width: 150px;
-    }
-
-    footer ul {
-        font-size: 13px;
-
-    }
-}
-
-@media screen and (min-width:1121px) {
-
-    .encabezado {
-        height: 220px;
-    }
-
-    .logo {
-        width: 18%;
-        height: 28%;
-    }
-
-    .informacion {
-        width: 80%;
-        margin-top: 1%;
-    }
-
-    .informacion h5 {
-        font-size: 15px;
-    }
-
-    .navbar {
-        height: 55px;
-    }
-
-
-    .nav-item {
-        margin: 1%;
-    }
-
-    .nav-item1 {
-        margin-left: 0%;
-    }
-}
 
 @media screen and (max-width:1268px) and (min-width:1121px) {
     .informacion h1 {
         margin-top: -30px;
     }
 }
-
-@media screen and (max-width:1000px) and (min-width:651px) {
-    .podcast {
-        width: 80%;
-    }
-
-    .podcast1 h1 {
-        font-size: 40px;
-    }
-}
-
 
 @media screen and (max-width:930px) and (min-width:621px) {
     .grid {

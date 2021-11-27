@@ -208,7 +208,7 @@ label input {
     box-sizing: border-box;
     background-color: transparent;
     border: 0;
-    border-bottom: 1px solid var(--color1);
+    border-bottom: 1px solid var(--color3);
     border-radius: 10px
 }
 
@@ -236,9 +236,9 @@ form button:hover {
 
 form div {
     width: 100%;
-    border: 1px dashed var(--color1);
+    background-color: var(--color3);
     border-radius: 10px;
-    color: var(--color1);
+    color: var(--color);
     font-size: 17px;
     text-align: center;
     margin-top: 10%;
@@ -387,11 +387,15 @@ footer p {
         font-size: 10px;
     }
 
+    nav {
+        z-index: 20;
+    }
+
     .navbar {
         height: 60px;
     }
 
-    nav-item {
+    .nav-item {
         width: 90%;
         margin: 0%;
     }
@@ -403,6 +407,22 @@ footer p {
     .dropdown-toggle,
     .active {
         background: white;
+
+    }
+
+    .form {
+        width: 100%;
+
+    }
+
+    .form h2 {
+        width: 100%;
+        font-size: 23px;
+    }
+
+    form button {
+        width: 40%;
+        margin: 4% 30% 0;
     }
 
     footer ul {
@@ -444,14 +464,9 @@ footer p {
         font-size: 15px;
     }
 
-    .navbar {
-        height: 60px;
+    nav {
+        z-index: 20;
     }
-
-    .navbar {
-        height: 60px;
-    }
-
 
     .nav-item {
         width: 80%;
@@ -461,6 +476,28 @@ footer p {
     .nav-item a {
         text-align: center;
     }
+
+    .dropdown-toggle,
+    .active {
+        background: white;
+
+    }
+
+    .form {
+        width: 90%;
+
+    }
+
+    .form h2 {
+        width: 100%;
+        font-size: 23px;
+    }
+
+    form button {
+        width: 40%;
+        margin: 4% 30% 0;
+    }
+
 
     footer ul {
         font-size: 13px;
@@ -495,9 +532,14 @@ footer p {
         font-size: 11px;
     }
 
+    nav {
+        z-index: 20;
+    }
+
     .navbar {
         height: 55px;
     }
+
 
     .nav-item {
         width: 65%;
@@ -512,6 +554,20 @@ footer p {
     .active {
         background: white;
 
+    }
+
+    .form {
+        width: 90%;
+
+    }
+
+    form button {
+        width: 40%;
+        margin: 4% 30% 0;
+    }
+
+    .form h2 {
+        width: 100%;
     }
 
     footer ul {
@@ -540,45 +596,6 @@ footer p {
         margin-top: 3%;
     }
 
-    .informacionh1 {
-        font-size: 33px;
-        margin-top: 4%;
-    }
-
-    .informacion h5 {
-        font-size: 15px;
-    }
-
-    .navbar {
-        height: 55px;
-    }
-
-    .dropdown-toggle {
-        background: rgba(218, 214, 214, 0.726);
-    }
-
-    footer ul {
-        font-size: 13px;
-
-    }
-}
-
-@media screen and (max-width:1120px) and (min-width:989px) {
-
-    .encabezado {
-        height: 220px;
-    }
-
-    .logo {
-        width: 18%;
-        height: 28%;
-    }
-
-    .informacion {
-        width: 70%;
-        margin-top: 3%;
-    }
-
     .informacion h1 {
         font-size: 33px;
         margin-top: 4%;
@@ -588,59 +605,41 @@ footer p {
         font-size: 15px;
     }
 
+    nav {
+        z-index: 20;
+    }
+
     .navbar {
         height: 55px;
     }
 
     .nav-item {
+        width: 50%;
         margin: 0%;
     }
 
-    .nav-item1 {
-        margin-left: 0%;
+    .nav-item a {
+        text-align: center;
     }
 
-    .nv {
-        width: 150px;
+    .dropdown-toggle,
+    .active {
+        background: white;
+    }
+
+    .form {
+        width: 75%;
+
+    }
+
+    form button {
+        width: 40%;
+        margin: 4% 30% 0;
     }
 
     footer ul {
         font-size: 13px;
 
-    }
-}
-
-@media screen and (min-width:1121px) {
-
-    .encabezado {
-        height: 220px;
-    }
-
-    .logo {
-        width: 18%;
-        height: 28%;
-    }
-
-    .informacion {
-        width: 80%;
-        margin-top: 1%;
-    }
-
-    .informacion h5 {
-        font-size: 15px;
-    }
-
-    .navbar {
-        height: 55px;
-    }
-
-
-    .nav-item {
-        margin: 1%;
-    }
-
-    .nav-item1 {
-        margin-left: 0%;
     }
 }
 
